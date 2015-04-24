@@ -1,0 +1,48 @@
+package game2_package;
+
+import java.awt.Graphics;
+import java.awt.Rectangle;
+
+
+public abstract class GameObject {
+	  protected float x,y;
+	  protected ID2 id;
+	  protected float velX, velY;
+      public GameObject(float x, float y, ID2 id){
+              this.x = x;
+              this.y = y;
+              
+      }
+      public abstract void tick();
+      public abstract void render(Graphics g);
+      public void setX2(int x){
+              this.x = x;
+      }
+      public void setY2(int y){
+              this.y = y;
+      }
+      public float getX2(){
+              return x;
+      }
+      public float getY2(){
+              return y;
+      }
+      public void setID2(ID2 id){
+          this.id = id;
+      }
+      public ID2 getId2(){
+          return id;
+      }
+      public void setVelX2(int velX){
+          this.velX = velX;
+      }
+      public void setVelY2(int velY){
+          this.velY = velY;
+      }
+      public float getVelX2(){
+          return velX;
+      }
+      public float getVelY2(){
+          return velY;
+      }
+}
